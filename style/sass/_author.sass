@@ -8,12 +8,12 @@ html, body
 	-moz-osx-font-smoothing: grayscale
 
 .redbutton
-	width: 40px
-	height: 40px
+	width: 60px
+	height: 60px
 	border-radius: 75%
 	background: rgba(242,8,27,0.7)
 	float: left
-	margin: 40px 0 0 10px
+	margin: 40px 0 0 30px
 	cursor: pointer
 // .bluebutton
 // 	width: 40px
@@ -28,7 +28,7 @@ html, body
 	position: relative
 	margin: auto
 	.red
-		@include transition(all, 0.8s, linear, 0s)
+		@include transition(all, 0.5s, linear, 0s)
 		-webkit-animation-name: bounce
 		animation-name: bounce
 		width: 600px
@@ -43,12 +43,12 @@ html, body
 			padding-left: 75px
 			margin-top: 40px
 			h1
-				margin-bottom: 30px
+				margin-bottom: 40px
 			li
 				font-size: 2.2rem
 				padding-left: 10px
 				color: white
-				padding: 1% 0 1% 3%
+				padding: 1.5% 0 1% 3%
 				border-radius: 7px
 				cursor: pointer
 				&:hover
@@ -81,7 +81,7 @@ html, body
 			transform: none
 
 	.blue	
-		@include transition(all, 0.8s, linear, 0s)
+		@include transition(all, 0.5s, linear, 0s)
 		width: 600px
 		height: 500px 
 		background: rgba(34,49,206,0.6)
@@ -95,11 +95,25 @@ html, body
 			margin-top: 40px
 			text-align: right
 			h1
-				margin-bottom: 30px
+				margin-bottom: 40px
 			li
 				font-size: 2.2rem
-				margin: 10px 0 0 0 
+				padding: 1.5% 0 1% 3% 
 				color: white
+				position: relative
+				span.tick
+					position: absolute
+					left: -117%
+					img.tick
+						width: 7%
+						height: 7%
+				span  
+					opacity: 0
+					@include transition(all, 0.4s, ease, 0.4s)
+					&.active
+						opacity: 1
+						@include transition(all, 0.4s, ease, 0.4s) 
+					
 		&.active1
 			right: 0 
 			

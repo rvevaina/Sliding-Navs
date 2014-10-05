@@ -41,11 +41,11 @@ body {
   font-size: 13px;
   line-height: 1.231;
   font-family: sans-serif;
-  color: #222222; }
+  color: #222; }
 
 button, input, select, textarea {
   font-family: sans-serif;
-  color: #222222; }
+  color: #222; }
 
 /* Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
@@ -53,23 +53,23 @@ button, input, select, textarea {
  */
 ::-moz-selection {
   background: #fe57a1;
-  color: white;
+  color: #fff;
   text-shadow: none; }
 
 ::selection {
   background: #fe57a1;
-  color: white;
+  color: #fff;
   text-shadow: none; }
 
 /* =============================================================================
  * Links
  * ========================================================================== */
 a {
-  color: #0000ee; }
+  color: #00e; }
   a:visited {
     color: #551a8b; }
   a:hover {
-    color: #0066ee; }
+    color: #06e; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -94,18 +94,18 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; }
 
 ins {
-  background: #ffff99;
-  color: black;
+  background: #ff9;
+  color: #000;
   text-decoration: none; }
 
 mark {
-  background: yellow;
-  color: black;
+  background: #ff0;
+  color: #000;
   font-style: italic;
   font-weight: bold; }
 
@@ -358,7 +358,7 @@ td {
     content: ""; }
 
   pre, blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {
@@ -399,7 +399,7 @@ td {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
 
@@ -420,7 +420,7 @@ td {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {
@@ -464,14 +464,14 @@ h1 {
 html {
   width: 100%;
   height: 100%;
-  background: white; }
+  background: #ffffff; }
 
 html,
 button,
 input,
 select,
 textarea {
-  color: #222222; }
+  color: #222; }
 
 html, body {
   height: 100%;
@@ -494,7 +494,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -513,8 +513,8 @@ textarea {
 
 .chromeframe {
   margin: 0.2em 0;
-  background: #cccccc;
-  color: black;
+  background: #ccc;
+  color: #000;
   padding: 0.2em 0; }
 
 html, body {
@@ -526,12 +526,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale; }
 
 .redbutton {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 75%;
   background: rgba(242, 8, 27, 0.7);
   float: left;
-  margin: 40px 0 0 10px;
+  margin: 40px 0 0 30px;
   cursor: pointer; }
 
 .boxwrapper {
@@ -539,11 +539,11 @@ html, body {
   position: relative;
   margin: auto; }
   .boxwrapper .red {
-    -webkit-transition: all 0.8s linear 0s;
-    -moz-transition: all 0.8s linear 0s;
-    -o-transition: all 0.8s linear 0s;
-    -ms-transition: all 0.8s linear 0s;
-    transition: all 0.8s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -ms-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
     -webkit-animation-name: bounce;
     animation-name: bounce;
     width: 600px;
@@ -558,12 +558,12 @@ html, body {
       padding-left: 75px;
       margin-top: 40px; }
       .boxwrapper .red ul h1 {
-        margin-bottom: 30px; }
+        margin-bottom: 40px; }
       .boxwrapper .red ul li {
         font-size: 2.2rem;
         padding-left: 10px;
         color: white;
-        padding: 1% 0 1% 3%;
+        padding: 1.5% 0 1% 3%;
         border-radius: 7px;
         cursor: pointer; }
         .boxwrapper .red ul li:hover {
@@ -572,32 +572,32 @@ html, body {
     .boxwrapper .red.active {
       left: 0; }
 @-webkit-keyframes bounce {
-  .boxwrapper 0%  ,  60%  ,  75%  ,  90%  ,  100%  {
+  0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .boxwrapper 0%  {
+  0% {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0);
     transform: translate3d(3000px, 0, 0); }
-  .boxwrapper 60%  {
+  60% {
     opacity: 1;
     -webkit-transform: translate3d(-25px, 0, 0);
     transform: translate3d(-25px, 0, 0); }
-  .boxwrapper 75%  {
+  75% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0); }
-  .boxwrapper 90%  {
+  90% {
     -webkit-transform: translate3d(-5px, 0, 0);
     transform: translate3d(-5px, 0, 0); }
-  .boxwrapper 100%  {
+  100% {
     -webkit-transform: none;
     transform: none; } }
   .boxwrapper .blue {
-    -webkit-transition: all 0.8s linear 0s;
-    -moz-transition: all 0.8s linear 0s;
-    -o-transition: all 0.8s linear 0s;
-    -ms-transition: all 0.8s linear 0s;
-    transition: all 0.8s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -ms-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
     width: 600px;
     height: 500px;
     background: rgba(34, 49, 206, 0.6);
@@ -611,11 +611,32 @@ html, body {
       margin-top: 40px;
       text-align: right; }
       .boxwrapper .blue ul h1 {
-        margin-bottom: 30px; }
+        margin-bottom: 40px; }
       .boxwrapper .blue ul li {
         font-size: 2.2rem;
-        margin: 10px 0 0 0;
-        color: white; }
+        padding: 1.5% 0 1% 3%;
+        color: white;
+        position: relative; }
+        .boxwrapper .blue ul li span.tick {
+          position: absolute;
+          left: -117%; }
+          .boxwrapper .blue ul li span.tick img.tick {
+            width: 7%;
+            height: 7%; }
+        .boxwrapper .blue ul li span {
+          opacity: 0;
+          -webkit-transition: all 0.4s ease 0.4s;
+          -moz-transition: all 0.4s ease 0.4s;
+          -o-transition: all 0.4s ease 0.4s;
+          -ms-transition: all 0.4s ease 0.4s;
+          transition: all 0.4s ease 0.4s; }
+          .boxwrapper .blue ul li span.active {
+            opacity: 1;
+            -webkit-transition: all 0.4s ease 0.4s;
+            -moz-transition: all 0.4s ease 0.4s;
+            -o-transition: all 0.4s ease 0.4s;
+            -ms-transition: all 0.4s ease 0.4s;
+            transition: all 0.4s ease 0.4s; }
     .boxwrapper .blue.active1 {
       right: 0; }
 
@@ -627,7 +648,7 @@ html, body {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
 
@@ -648,7 +669,7 @@ html, body {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {

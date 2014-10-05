@@ -19,27 +19,28 @@
     <div class="redbutton"></div>
     <!-- <div class="bluebutton"></div> -->
     <div class="boxwrapper">
+
         <div class="red">
             <ul>
-                <h1>Friends</h1>
-                <li class="wisam">Wisam</li>
-                <li>Logan</li>
-                <li>Jen</li>
-                <li>Matt</li>
-                <li>Jana</li>
-                <li>Drew</li>
+                <h1>My Events</h1>
+                <li class ="beach">Beach Party</li>
+                <li class ="bbq">BBQ</li>
+                <li class ="hWarming">Housewarming</li>
+                <li class ="baseball">Baseball</li>
+                <li class ="hackeryou">HackerYou Reunion</li>
+                <li class ="superbowl">SuperBowl</li>
             </ul>
         </div>
-
         <div class="blue">
             <ul>
-                <h1>My Events</h1>
-                <li>Beach Party</li>
-                <li>BBQ</li>
-                <li>Housewarming</li>
-                <li>Baseball</li>
-                <li>HackerYou Reunion</li>
-                <li>SuperBowl</li>
+                <h1>Friends</h1>
+                <li class="wisam"><span class="wisam tick"><img class="tick" src="img/tick.png" alt=""/></span> Wisam Zaghal
+                </li>
+                <li><span class="logan tick"><img class="tick" src="img/tick.png" alt=""/></span>Logan Greer</li>
+                <li><span class="jen tick"><img class="tick" src="img/tick.png" alt=""/></span>Jen Abela-Freose</li>
+                <li><span class="mac tick"><img class="tick" src="img/tick.png" alt=""/></span>Mac Mcfaded</li>
+                <li><span class="jana tick"><img class="tick" src="img/tick.png" alt=""/></span>Jana Hue</li>
+                <li><span class="drew tick"><img class="tick" src="img/tick.png" alt=""/></span>Drew Minns</li>
             </ul>
         </div>
     </div>       
