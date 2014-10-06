@@ -1,9 +1,39 @@
 $(document).ready(function() {
-       
+
+
+
+// Dialog box popup
+
+$(function() {
+    $( "#dialogBeach" ).dialog({
+      autoOpen: false,
+      height: 300,
+      minWidth: 300,
+      minHeight: 300,
+      resizable: false,
+      modal: true,
+  });
+   
+  $("img.beachCalendar").click(function() {
+      $("#dialogBeach").dialog("open");
+  });
+  
+});
+
+
+//button click function
  $(".redbutton").click(function(){  
      $(".red").toggleClass( "active", 1000);
-  });         
-              
+     $(".blue").toggleClass( "active1", 1000);
+  // clear everything on second click 
+     $("span.wisam, span.logan, span.jana, span.drew, span.mac, span.jen").removeClass( "active");
+      $("li.beach, li.baseball, li.bbq, li.hWarming, li.hackeryou, li.superbowl").css("opacity", "1");
+      $("li.beach, li.baseball, li.bbq, li.hWarming, li.hackeryou, li.superbowl").css("color", "white");
+  });    
+
+  
+
+//  List item clicks    
   $("li.beach").click(function(){  
   	 $(this).css("color", "blue");
      $(".blue").addClass( "active1", 1000);

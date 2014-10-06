@@ -23,7 +23,15 @@
         <div class="red">
             <ul>
                 <h1>My Events</h1>
-                <li class ="beach">Beach Party</li>
+                <div id="beach">
+                    <div id="dialogBeach" title="Calendar">
+                        <img src="img/calendar.png" height: "300" width: "300" alt="">
+                    </div>
+    
+                    <img class ="beachCalendar" src="img/calendar.png" alt="">
+                    <li class ="beach">Beach Party
+                    </li>
+                </div>
                 <li class ="bbq">BBQ</li>
                 <li class ="hWarming">Housewarming</li>
                 <li class ="baseball">Baseball</li>
@@ -45,9 +53,11 @@
         </div>
     </div>       
 
+
+
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-
+        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
