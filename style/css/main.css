@@ -535,7 +535,7 @@ html, body {
   cursor: pointer; }
 
 .boxwrapper {
-  width: 1100px;
+  width: 1000px;
   position: relative;
   margin: auto; }
   .boxwrapper .red {
@@ -546,7 +546,7 @@ html, body {
     transition: all 0.5s linear 0s;
     -webkit-animation-name: bounce;
     animation-name: bounce;
-    width: 600px;
+    width: 550px;
     height: 500px;
     background: rgba(242, 8, 27, 0.6);
     float: left;
@@ -572,15 +572,12 @@ html, body {
           width: 65%; }
       .boxwrapper .red ul #beach {
         width: 100%; }
-        .boxwrapper .red ul #beach #dialogBeach img {
-          width: 500px;
-          height: 500px;
-          opacity: 1; }
         .boxwrapper .red ul #beach img {
           display: inline-block;
           width: 30px;
           height: 30px;
-          margin-bottom: 1%; }
+          margin-bottom: 1%;
+          cursor: pointer; }
         .boxwrapper .red ul #beach li {
           display: inline-block;
           vertical-align: -5px; }
@@ -613,7 +610,7 @@ html, body {
     -o-transition: all 0.5s linear 0s;
     -ms-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
-    width: 600px;
+    width: 550px;
     height: 500px;
     background: rgba(34, 49, 206, 0.6);
     float: right;
@@ -635,7 +632,7 @@ html, body {
         position: relative; }
         .boxwrapper .blue ul li span.tick {
           position: absolute;
-          left: -117%; }
+          left: -130%; }
           .boxwrapper .blue ul li span.tick img.tick {
             width: 7%;
             height: 7%; }
@@ -655,6 +652,30 @@ html, body {
             transition: all 0.4s ease 0.4s; }
     .boxwrapper .blue.active1 {
       right: 0; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 104;
+  top: -2000px; }
+  .overlay.active {
+    top: 0; }
+  .overlay .beachBig {
+    position: relative;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    top: -2000px; }
+    .overlay .beachBig.active {
+      top: 0px; }
+    .overlay .beachBig img {
+      width: 500px;
+      height: 100%;
+      margin: 8% 23%; }
 
 /* @media print,
  * (-o-min-device-pixel-ratio: 5/4),

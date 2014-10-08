@@ -24,10 +24,6 @@
             <ul>
                 <h1>My Events</h1>
                 <div id="beach">
-                    <div id="dialogBeach" title="Calendar">
-                        <img src="img/calendar.png" height: "300" width: "300" alt="">
-                    </div>
-    
                     <img class ="beachCalendar" src="img/calendar.png" alt="">
                     <li class ="beach">Beach Party
                     </li>
@@ -52,7 +48,12 @@
             </ul>
         </div>
     </div>       
-
+        <div class="overlay">
+            <div class= "beachBig" title="Calendar">
+                <img src="img/calendar.png" alt="">
+           </div>
+        </div>
+    
 
 
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
@@ -67,5 +68,7 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+       
 </body>
 </html>

@@ -4,21 +4,21 @@ $(document).ready(function() {
 
 // Dialog box popup
 
-$(function() {
-    $( "#dialogBeach" ).dialog({
-      autoOpen: false,
-      height: 300,
-      minWidth: 300,
-      minHeight: 300,
-      resizable: false,
-      modal: true,
-  });
+// $(function() {
+//     $( "#dialogBeach" ).dialog({
+//       autoOpen: false,
+//       height: 300,
+//       minWidth: 300,
+//       minHeight: 300,
+//       resizable: false,
+//       modal: true,
+//   });
    
-  $("img.beachCalendar").click(function() {
-      $("#dialogBeach").dialog("open");
-  });
+//   $("img.beachCalendar").click(function() {
+//       $("#dialogBeach").dialog("open");
+//   });
   
-});
+// });
 
 
 //button click function
@@ -128,6 +128,13 @@ $(function() {
      	// 	$("li.superbowl").css("opacity", "1");
      	// });
      });
+  });
+
+  // calender modal box
+
+  $("img.beachCalendar").click(function(){
+        $(".overlay").addClass("active");
+        $(".beachBig").addClass("active");
   });
 
 
