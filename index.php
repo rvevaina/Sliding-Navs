@@ -28,11 +28,26 @@
                     <li class ="beach">Beach Party
                     </li>
                 </div>
-                <li class ="bbq">BBQ</li>
-                <li class ="hWarming">Housewarming</li>
-                <li class ="baseball">Baseball</li>
-                <li class ="hackeryou">HackerYou Reunion</li>
-                <li class ="superbowl">SuperBowl</li>
+                <div id ="bbq">
+                    <img class ="bbqCalendar" src="img/calendar.png" alt=""> 
+                    <li class ="bbq">BBQ</li>
+                </div>
+                <div id ="hWarming">
+                    <img class ="hWarmingCalendar" src="img/calendar.png" alt=""> 
+                    <li class ="hWarming">Housewarming</li>
+                </div>
+                <div id ="baseball">
+                    <img class ="baseballCalendar" src="img/calendar.png" alt=""> 
+                    <li class ="baseball">Baseball</li>
+                </div>
+                <div id ="hackeryou">
+                    <img class ="hackerYouCalendar" src="img/calendar.png" alt=""> 
+                    <li class ="hackeryou">HackerYou Reunion</li>
+                </div>
+                <div id ="football">
+                    <img class ="footballCalendar" src="img/calendar.png" alt=""> 
+                    <li class ="superbowl">Playoffs</li>
+                </div>
             </ul>
         </div>
         <div class="blue">
@@ -50,7 +65,40 @@
     </div>       
         <div class="overlay">
             <div class= "beachBig" title="Calendar">
-                <img src="img/calendar.png" alt="">
+                <div class="image">
+                    <img src="img/calendar-beach.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
+           </div>
+           <div class= "bbqBig" title="Calendar">
+                <div class="image">
+                    <img src="img/calendar-bbq.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
+           </div>
+           <div class= "hWarmingBig" title="Calendar">
+                <div class="image">
+                    <img src="img/calendar-housew.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
+           </div>
+           <div class= "baseballBig" title="Calendar">
+                <div class="image">
+                    <img src="img/calendar-baseball.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
+           </div>
+           <div class= "reunionBig" title="Calendar">
+                <div class="image">
+                    <img src="img/calendar-hackeryou.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
+           </div>
+           <div class= "footballBig" title="Calendar">
+                <div class="image">
+                    <img src="img/calendar-football.png" alt="">
+                    <a class="calendarClose" id="calenderClose"></a>
+                </div>
            </div>
         </div>
     
