@@ -659,17 +659,17 @@ html, body {
   height: 100%;
   position: relative;
   z-index: 104;
-  top: -2000px; }
+  display: none; }
   .overlay.active {
     top: 0; }
   .overlay .beachBig, .overlay .bbqBig, .overlay .hWarmingBig, .overlay .baseballBig, .overlay .reunionBig, .overlay .footballBig {
     position: absolute;
-    -webkit-transition: all 1s ease 0s;
-    -moz-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
-    top: -9000px; }
+    -webkit-transition: all 1s ease 0.2s;
+    -moz-transition: all 1s ease 0.2s;
+    -o-transition: all 1s ease 0.2s;
+    -ms-transition: all 1s ease 0.2s;
+    transition: all 1s ease 0.2s;
+    top: -2000px; }
     .overlay .beachBig.active, .overlay .bbqBig.active, .overlay .hWarmingBig.active, .overlay .baseballBig.active, .overlay .reunionBig.active, .overlay .footballBig.active {
       top: 0px; }
     .overlay .beachBig .image, .overlay .bbqBig .image, .overlay .hWarmingBig .image, .overlay .baseballBig .image, .overlay .reunionBig .image, .overlay .footballBig .image {

@@ -6,7 +6,7 @@ $("img.bbqCalendar, img.hWarmingCalendar, img.baseballCalendar, img.beachCalenda
  $(".redbutton").click(function(){  
      $(".red").toggleClass( "active", 1000);
      $(".blue").toggleClass( "active1", 1000);
-     $("img.bbqCalendar, img.hWarmingCalendar, img.baseballCalendar, img.beachCalendar, img.hackerYouCalendar, img.footballCalendar").delay(500).fadeIn(2800);
+     $("img.bbqCalendar, img.hWarmingCalendar, img.baseballCalendar, img.beachCalendar, img.hackerYouCalendar, img.footballCalendar").delay(500).fadeIn(2000);
   // clear everything on second click 
      $("span.wisam, span.logan, span.jana, span.drew, span.mac, span.jen").removeClass( "active");
       $("li.beach, li.baseball, li.bbq, li.hWarming, li.hackeryou, li.superbowl").css("opacity", "1");
@@ -105,34 +105,39 @@ $("img.bbqCalendar, img.hWarmingCalendar, img.baseballCalendar, img.beachCalenda
   // calender modal box
 
   $("img.beachCalendar").click(function(){
-        $(".overlay").addClass("active");
+        $(".overlay").fadeIn(800);
         $(".beachBig").addClass("active");
   });
 
   $("img.bbqCalendar").click(function(){
-        $(".overlay").addClass("active");
+        $(".overlay").fadeIn(800);
         $(".bbqBig").addClass("active");
   });
 
   $("img.hWarmingCalendar").click(function(){
-        $(".overlay").addClass("active");
+        $(".overlay").fadeIn(800);
         $(".hWarmingBig").addClass("active");
   });
 
   $("img.baseballCalendar").click(function(){
-        $(".overlay").addClass("active");
+        $(".overlay").fadeIn(800);
         $(".baseballBig").addClass("active");
   });
 
   $("img.hackerYouCalendar").click(function(){
-        $(".overlay").addClass("active");
+       $(".overlay").fadeIn(800);
         $(".reunionBig").addClass("active");
   });
 
   $("img.footballCalendar").click(function(){
-        $(".overlay").addClass("active");
+        $(".overlay").fadeIn(800);
         $(".footballBig").addClass("active");
   });
+
+    $('.calendarClose').click(function(){
+        $(".overlay").fadeOut(2000);
+        $(".beachBig, .bbqBig, .footballBig, .reunionBig, .baseballBig, .hWarmingBig").removeClass("active");
+    });
 
 
 }); //document ready

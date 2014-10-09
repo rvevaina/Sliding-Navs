@@ -135,13 +135,13 @@ html, body
 	height: 100%
 	position: relative
 	z-index: 104
-	top: -2000px
+	display: none
 	&.active 
 		top: 0
 	.beachBig, .bbqBig, .hWarmingBig,.baseballBig, .reunionBig,.footballBig
 		position: absolute
-		@include transition(all, 1s, ease, 0s)
-		top: -9000px
+		@include transition(all, 1s, ease, 0.2s)
+		top: -2000px
 		&.active 
 			top: 0px
 		.image
